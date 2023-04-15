@@ -1,9 +1,55 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>My website</title>
+        <title>Microcosmos</title>
+        <style>
+            #title {
+                padding: 20px;
+                margin: 20px;
+                text-align: center;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+            }
+            #logo {
+                padding: 10px;
+                margin: 10px;
+                width: 20px;
+                height: 20px;
+            }
+            #para {
+                display: inline block;
+                text-align: center;
+            }
+            #login {
+                border: 2px solid black;
+                padding: 20px;
+                margin: 20px;
+                width: 500px;
+            }
+            a {
+            }
+        </style>
     </head>
     <body>
-        <h1>This is my personal Website!</h1>
+        <div id="para">
+            <div id="title"> Welcome to Microcosmos!</div>
+            <div id="logo">
+                <img src="microcosmos.jpg" alt="Microcosmos" width="50px" height="50px">
+            </div>
+        </div>
+
+        <form id="login">
+            <h4>Please Login into Your account!</h4>
+            <h5 style="color:red ;">note: * marked fields are mandatory</h5>
+            <label for="username">* Username: </label>
+            <input type="text" name="username" size="32">
+            <br><br>
+            <label for="password">* Password:  </label>
+            <input type="password" name="password" size="32">
+            <br><br>
+            <input type="submit">
+            <br><br>
+            <h5>If you do not have account, please <a href="signup.html">sign up</a> using your e-mail adress</h5>
+        </form>
     </body>
 </html>
